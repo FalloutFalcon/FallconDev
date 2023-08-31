@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <style>
+    body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    @keyframes spinning {
+        from { transform: rotate(0deg) }
+        to { transform: rotate(360deg) }
+    }
+    .spin {
+        animation-name: spinning;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    </style>
+</head>
+<body style="background-color:#ffb6c1;">
+    <div class="box" style="margin-top: 10px">
+        <header>
+            <p>Welcome</p>
+        </header>
+    </div>
+    <span>Hehehe 
+        <a target="_blank">
+            <img src="fallcon.jpg" alt="Gay" style="width:300px;" class="spin">
+        </a>
+    </span>
+</html>
