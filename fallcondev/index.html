@@ -1,125 +1,42 @@
-<!--
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: system-ui, sans-serif;
-    color: #4B2A2F;
-
-
-            .box {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 300px;
-            height: 100px;
-            background-color: #ffb6c1;
-            border-radius: 5px;
-            text-align: center;
-            font-size: 50px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #000000;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-
--->
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Fallcons</title>
-    <link rel="shortcut icon" href="fallcon.png"/>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Fallcon">
-    <meta name="description" content="My little dev blog">
-    <style>
-        body {
-            background: linear-gradient(80deg, #FBFFB5,#ffb6c1 30%, #E5B5FF 90%);
-            display: flex;
-            justify-content: center;
-            height: 200vh;
-            margin: 0;
-            font-family: system-ui, sans-serif;
-            color: #4B2A2F;
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: 750px 250px;
-            grid-template-rows: 500px 250px;
-        }
-
-        .mainbox {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border-style: solid;
-            border-color: grey;
-            background-color: #FFDCB8;
-            border-radius: 5px;
-            text-align: center;
-            font-family: system-ui, sans-serif;
-            color: black;
-            overflow-y: auto;
-            margin: 10px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .alstolfo {
-            position: fixed;
-            bottom: 0;
-            right: 0;
-        }
-
-        .moth {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-        }
-
-        header {
-            font-size: 30px;
-        }
-
-        .content {
-            padding: 5px;
-            text-align: left;
-            max-width: 90%;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        <div class="mainbox">
-            <header>
-                <p>Welcome to my <strong>blog</strong></p>
-            </header>
-            <div class="content">
-                <p>This is my little dev blog. I'll be posting about my projects and other stuff here.</p>
-            </div>
-        </div> 
-        <div class="mainbox">
-            <header>About me</header>
-
-        </div>
-        <div class="mainbox">
-            <header>
-                <p>Projects</p>
-            </header>
-            <div class="content">
-                <p>Im currently working on a website for </p>
-                
-        </div>
-    </div>
-    <img src="moth_hell.gif" style="width:300px;" class="moth" />
-    <a href="based.png">
-        <img src="fallcon.png" alt="Gay" style="width:300px;" class="alstolfo" />
-    </a>
-</body>
-
+ <head> 
+  <title>Fallcons</title> 
+  <link rel="shortcut icon" href="fallcon.png" /> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <meta name="author" content="Fallcon" /> 
+  <meta name="description" content="My little dev blog" /> 
+  <link rel="stylesheet" type="text/css" href="style.css" /> 
+ </head> 
+ <body> 
+  <div class="container"> 
+   <div class="box"> 
+    <header> 
+     <p>Welcome to my <strong>blog</strong></p> 
+    </header> 
+    <div class="content"> 
+     <p>This is my little dev blog. I'll be posting about my projects and other stuff here.</p> 
+    </div> 
+   </div> 
+   <div class="box"> 
+    <header>
+     <p>About Me</p>
+    </header> 
+     <p>I enjoy TF2!</p>
+   </div> 
+   <div class="box"> 
+    <header> 
+     <p>Projects</p>
+    </header> 
+    <div class="content"> 
+     <p>Im currently working on a archive website for my school!</p>
+     <p>I also contribute to the Shiptest fork of ss13!</p>
+     <p>Robotics!</p> 
+    </div> 
+   </div> 
+   <img src="moth_hell.gif" style="width:300px;" class="moth" /> 
+   <a href="based.png"> <img src="fallcon.png" alt="Gay" style="width:300px;" class="alstolfo" /> </a>  
+  </div>
+ </body>
 </html>
