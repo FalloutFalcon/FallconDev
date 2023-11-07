@@ -1,8 +1,13 @@
+import HeaderComponent from "./header";
+import LikeComponent from "./client";
+
 export default function Home() {
   return (
     <div className="w-[90vw]">
       <header>
         <h1>fallcon's</h1>
+        <HeaderComponent></HeaderComponent>
+        <LikeComponent></LikeComponent>
       </header>
 
       <div className="box">
@@ -30,13 +35,13 @@ export default function Home() {
       <div className="box">
         <h3>Projects</h3>
         <h4>Shiptest Github Repository - Contributor</h4>
-        <a href="github.com/shiptest-ss13/Shiptest">Shiptest Github</a>
+        <a href="https://github.com/shiptest-ss13/Shiptest">Shiptest Github</a>
         <p>
           I made a few PRs to the Shiptest repository, including Trickwines and
           Rations!
         </p>
         <h4>TSA Vex Robotics, Antioch High School - Code Captain</h4>
-        <a href="github.com/FalloutFalcon/CybearMain">Last years Github</a>
+        <a href="https://github.com/FalloutFalcon/CybearMain">Last years Github</a>
         <p>
           Autonomous and driver controls using the PROS api written in C++
           Qualified for national TSA competition. Solo developed and managed
@@ -44,14 +49,15 @@ export default function Home() {
           still the only coder ˙◠˙
         </p>
         <h4>MNPS Archive Website - Project Lead</h4>
+        <a href="https://fallcon.dev">Website</a>
         <p>
           Somehow I am the most qualified person in my school to lead a web
-          development project?{" "}
+          development project?
         </p>
       </div>
 
       <div className="box">
-        <h3>Info</h3>
+        <h3>Accounts</h3>
         <a href="https://github.com/FalloutFalcon">Github</a>
         <a href="https://steamcommunity.com/profiles/76561198289230657/">
           Steam
