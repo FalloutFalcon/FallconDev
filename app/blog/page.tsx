@@ -86,7 +86,7 @@ export default function Home() {
 
       <footer>
         <LikeComponent></LikeComponent>
-        <p className="pt-10">© 2023 fallcon's</p>
+        <p className="pt-10">© 2023 fallcon&apos;s</p>
       </footer>
     </div>
   );
