@@ -4,9 +4,8 @@ import LikeComponent from "./client";
 export default function Home() {
   return (
     <div className="w-[90vw]">
-    
       <HeaderComponent></HeaderComponent>
-      
+
       <div className="box">
         <h3>About Me</h3>
         <p>
@@ -21,6 +20,10 @@ export default function Home() {
 
       <div className="box">
         <h3>Coding</h3>
+        <p>
+          I do cool stuff for shiptest which I think is my favorite code to
+          write since I really like the feedback loop of coding games
+        </p>
         <p>
           I only recently started learning web development, but I already have
           been drinking the full stack soup. I have extreamly mixed feelings
@@ -38,7 +41,9 @@ export default function Home() {
           Rations!
         </p>
         <h4>TSA Vex Robotics, Antioch High School - Code Captain</h4>
-        <a href="https://github.com/FalloutFalcon/CybearMain">Last years Github</a>
+        <a href="https://github.com/FalloutFalcon/CybearMain">
+          Last years Github
+        </a>
         <p>
           Autonomous and driver controls using the PROS api written in C++
           Qualified for national TSA competition. Solo developed and managed
