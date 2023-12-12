@@ -37,8 +37,10 @@ export default function Home() {
         <h4>Shiptest Github Repository - Contributor</h4>
         <a href="https://github.com/shiptest-ss13/Shiptest">Shiptest Github</a>
         <p>
-          I made a few PRs to the Shiptest repository, including Trickwines and
-          Rations!
+          I have done a couple of cool things, Trickwine, Rations, Porting TG
+          Species food, with Gun Smithing and a rework to golem corpses in the
+          works. I have also done a bunch of the boring stuff like bug fixes and
+          refactors
         </p>
         <h4>TSA Vex Robotics - Code Captain</h4>
         <a href="https://github.com/FalloutFalcon/CybearMain">
@@ -51,10 +53,13 @@ export default function Home() {
           still the only coder ˙◠˙
         </p>
         <h4>MNPS Archive Website - Project Lead</h4>
-        <a href="https://fallcon.dev">Website</a>
+        <a href="https://mnps-archive.vercel.app">Website</a>
+        <p>Making a cool website! Im getting paid for this one!!!!</p>
+        <h4>Shiptest Blorbo Database</h4>
+        <a href="https://solgov.vercel.app">Website</a>
         <p>
-          Somehow I am the most qualified person in my school to lead a web
-          development project?
+          Desgined as a in world database made by a spy agency to keep tabs on
+          the frointer, Aka the characters people play.
         </p>
         <h4>Trackers</h4>
         <a href="trackers"> Making my own slimevr trackers! </a>
