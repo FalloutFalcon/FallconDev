@@ -1,4 +1,4 @@
 function HeaderComponent() {
-  return <div>I am header component</div>;
+  return <div>Insane!!</div>;
 }
 export default HeaderComponent;

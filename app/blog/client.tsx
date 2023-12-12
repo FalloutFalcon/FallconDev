@@ -8,7 +8,8 @@ function LikeComponent() {
   }
   return (
     <div>
-      <button onClick={handleClick}>Likes ({likes})</button>
+      <p>Button????</p>
+      <button className="border border-[pink] w-1/12" onClick={handleClick}>{likes}</button>
     </div>
   );
 }

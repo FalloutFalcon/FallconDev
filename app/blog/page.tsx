@@ -7,7 +7,6 @@ export default function Home() {
       <header>
         <h1>fallcon's</h1>
         <HeaderComponent></HeaderComponent>
-        <LikeComponent></LikeComponent>
       </header>
 
       <div className="box">
@@ -81,6 +80,7 @@ export default function Home() {
       </div>
 
       <footer>
+        <LikeComponent></LikeComponent>
         <p className="pt-10">© 2023 fallcon's</p>
       </footer>
     </div>
