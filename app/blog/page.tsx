@@ -40,7 +40,7 @@ export default function Home() {
           I made a few PRs to the Shiptest repository, including Trickwines and
           Rations!
         </p>
-        <h4>TSA Vex Robotics, Antioch High School - Code Captain</h4>
+        <h4>TSA Vex Robotics - Code Captain</h4>
         <a href="https://github.com/FalloutFalcon/CybearMain">
           Last years Github
         </a>
