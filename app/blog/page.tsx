@@ -4,11 +4,9 @@ import LikeComponent from "./client";
 export default function Home() {
   return (
     <div className="w-[90vw]">
-      <header>
-        <h1>fallcon's</h1>
-        <HeaderComponent></HeaderComponent>
-      </header>
-
+    
+      <HeaderComponent></HeaderComponent>
+      
       <div className="box">
         <h3>About Me</h3>
         <p>
@@ -53,6 +51,8 @@ export default function Home() {
           Somehow I am the most qualified person in my school to lead a web
           development project?
         </p>
+        <h4>Trackers</h4>
+        <a href="trackers"> Making my own slimevr trackers! </a>
       </div>
 
       <div className="box">
