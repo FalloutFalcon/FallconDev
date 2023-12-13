@@ -42,16 +42,6 @@ export default function Home() {
           works. I have also done a bunch of the boring stuff like bug fixes and
           refactors
         </p>
-        <h4>TSA Vex Robotics - Code Captain</h4>
-        <a href="https://github.com/FalloutFalcon/CybearMain">
-          Last years Github
-        </a>
-        <p>
-          Autonomous and driver controls using the PROS api written in C++
-          Qualified for national TSA competition. Solo developed and managed
-          github repository. We are currently building our next robot but im
-          still the only coder ˙◠˙
-        </p>
         <h4>MNPS Archive Website - Project Lead</h4>
         <a href="https://mnps-archive.vercel.app">Website</a>
         <p>Making a cool website! Im getting paid for this one!!!!</p>
