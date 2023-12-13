@@ -1,5 +1,6 @@
 import HeaderComponent from "./header";
 import LikeComponent from "./client";
+import LikeCount from "./server";
 
 export default function Home() {
   return (
@@ -80,7 +81,7 @@ export default function Home() {
       </div>
 
       <footer>
-        <LikeComponent></LikeComponent>
+        <LikeComponent likes={LikeCount(0)} />
         <p className="pt-10">© 2023 fallcon&apos;s</p>
       </footer>
     </div>
