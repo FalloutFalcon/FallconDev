@@ -2,6 +2,8 @@
 import React from "react";
 import LikeCount from "./server";
 
+export const revalidate = 0;
+
 function LikeComponent({ likes }: { likes: number }) {
   const [likeCount, setLikes] = React.useState(likes);
   function handleClick() {
