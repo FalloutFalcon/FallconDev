@@ -2,6 +2,9 @@
 
 import { useEffect, useState } from "react";
 
+import Image from "next/image";
+import fallconPic from "../../public/fallcon.png";
+
 export default function DiscordComponent() {
   interface Resp {
     discord_status: "online" | "dnd" | "idle";
@@ -68,6 +71,7 @@ export default function DiscordComponent() {
         ) : (
           ""
         )}
+        <Image src={fallconPic} className="w-[200px]" alt="Gay?" />
       </div>
     )
   );

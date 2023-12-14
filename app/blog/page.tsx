@@ -10,37 +10,47 @@ import mothHellPic from "../../public/moth_hell.gif";
 import fallconPic from "../../public/fallcon.png";
 import basedPic from "../../public/based.png";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "fallcon's blog",
+  description:
+    "My personal website! Mostly just a blog but doubles as a portfolio",
+};
+
 export default function Home() {
   return (
     <div className="w-[90vw]">
       <HeaderComponent></HeaderComponent>
       <div className="flex">
-        <div className="box">
-          <h3>About Me</h3>
-          <p>
-            I got my start coding in middle school where I faintly remember
-            scratch projects with my friend from boyscouts. I always wanted to
-            get good at coding because I always wanted to make my own games. I
-            made.. alot of progress since then and im really proud of alot of
-            the work I have done so far. I spend most of my time either gaming
-            or programming but I also really love D&D and gardening whenever I
-            can.
-          </p>
+        <div className="flex flex-col">
+          <div className="box">
+            <h3>About Me</h3>
+            <p>
+              I got my start coding in middle school where I faintly remember
+              scratch projects with my friend from boyscouts. I always wanted to
+              get good at coding because I always wanted to make my own games. I
+              made.. alot of progress since then and im really proud of alot of
+              the work I have done so far. I spend most of my time either gaming
+              or programming but I also really love D&D and gardening whenever I
+              can.
+            </p>
+          </div>
+          <div className="box">
+            <h3>Coding</h3>
+            <p>
+              I do cool stuff for shiptest which I think is my favorite code to
+              write since I really like the feedback loop of coding games
+            </p>
+            <p>
+              I only recently started learning web development, but I already
+              have been drinking the full stack soup. I have extreamly mixed
+              feelings about tailwind css but have been finding next.js and by
+              proxy react to be a lovely tool to work with
+            </p>
+          </div>
         </div>
         <DiscordComponent />
-      </div>
-      <div className="box">
-        <h3>Coding</h3>
-        <p>
-          I do cool stuff for shiptest which I think is my favorite code to
-          write since I really like the feedback loop of coding games
-        </p>
-        <p>
-          I only recently started learning web development, but I already have
-          been drinking the full stack soup. I have extreamly mixed feelings
-          about tailwind css but have been finding next.js and by proxy react to
-          be a lovely tool to work with
-        </p>
       </div>
 
       <div className="box">
