@@ -37,10 +37,10 @@ export default function DiscordComponent() {
   return (
     !loading &&
     data && (
-      <div className="bg-[#6d6875] my-2.5 m-[5px] p-2.5 rounded-[5px] border border-[3px] border-[#e5989b] border-[solid] bg flex flex-row items-center fixed w-[300px] right-0 bottom-[300px]">
+      <div className="bg fixed bottom-[300px] right-0 m-[5px] my-2.5 flex w-[300px] flex-row items-center rounded-[5px] border border-[3px] border-[#e5989b] border-[solid] bg-[#6d6875] p-2.5">
         <img
           src={`https://cdn.discordapp.com/avatars/${data.discord_user.id}/${data.discord_user.avatar}.png`}
-          className="rounded-full w-12 h-12"
+          className="h-12 w-12 rounded-full"
         />
         <p>{data.discord_status}</p>
       </div>

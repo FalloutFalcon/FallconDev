@@ -77,17 +77,17 @@ export default function Home() {
         </Link>
         <Image
           src={mothHellPic}
-          className="fixed opacity-0 w-[150px] left-0 bottom-0 hover:animate-[fadeIn_3s] hover:opacity-100"
+          className="fixed bottom-0 left-0 w-[150px] opacity-0 hover:animate-[fadeIn_3s] hover:opacity-100"
           alt="Wattsons terrible moth"
         />
         <Image
           src={fallconPic}
-          className="fixed w-[300px] right-0 bottom-0 hover:animate-[fadeIn_3s] hover:opacity-0"
+          className="fixed bottom-0 right-0 w-[300px] hover:animate-[fadeIn_3s] hover:opacity-0"
           alt="Gay?"
         />
         <Image
           src={basedPic}
-          className="fixed opacity-0 w-[300px] right-0 bottom-0 hover:animate-[fadeIn_3s] hover:opacity-100"
+          className="fixed bottom-0 right-0 w-[300px] opacity-0 hover:animate-[fadeIn_3s] hover:opacity-100"
           alt="Poggers"
         />
         <DiscordComponent />

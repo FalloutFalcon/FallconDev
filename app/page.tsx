@@ -6,10 +6,10 @@ import profilePicEvil from "../public/fallconEvil.png";
 
 export default function Home() {
   return (
-    <div className="flex-col text-center items-center h-auto m-0">
+    <div className="m-0 h-auto flex-col items-center text-center">
       <Link href="blog"> agh </Link>
       <Image
-        className="w-1/4 mx-auto"
+        className="mx-auto w-1/4"
         src={profilePicEvil}
         alt="Picture of the author"
       />
