@@ -14,19 +14,21 @@ export default function Home() {
   return (
     <div className="w-[90vw]">
       <HeaderComponent></HeaderComponent>
-
-      <div className="box">
-        <h3>About Me</h3>
-        <p>
-          I got my start coding in middle school where I faintly remember
-          scratch projects with my friend from boyscouts. I always wanted to get
-          good at coding because I always wanted to make my own games. I made..
-          alot of progress since then and im really proud of alot of the work I
-          have done so far. I spend most of my time either gaming or programming
-          but I also really love D&D and gardening whenever I can.
-        </p>
+      <div className="flex">
+        <div className="box">
+          <h3>About Me</h3>
+          <p>
+            I got my start coding in middle school where I faintly remember
+            scratch projects with my friend from boyscouts. I always wanted to
+            get good at coding because I always wanted to make my own games. I
+            made.. alot of progress since then and im really proud of alot of
+            the work I have done so far. I spend most of my time either gaming
+            or programming but I also really love D&D and gardening whenever I
+            can.
+          </p>
+        </div>
+        <DiscordComponent />
       </div>
-
       <div className="box">
         <h3>Coding</h3>
         <p>
@@ -90,7 +92,6 @@ export default function Home() {
           className="fixed bottom-0 right-0 w-[300px] opacity-0 hover:animate-[fadeIn_3s] hover:opacity-100"
           alt="Poggers"
         />
-        <DiscordComponent />
       </div>
 
       <footer>

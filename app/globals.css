@@ -56,8 +56,8 @@ a:hover {
 }
 
 .box {
-  border: #e5989b 3px solid;
-  border-radius: 5px;
+  border: #e5989b 2px solid;
+  border-radius: 4px;
   padding: 10px;
   margin: 5px;
   margin-top: 10px;

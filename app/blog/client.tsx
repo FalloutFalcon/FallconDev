@@ -14,7 +14,10 @@ function LikeComponent({ likes }: { likes: number }) {
   return (
     <div>
       <p>Button????</p>
-      <button className="w-1/12 border border-[pink]" onClick={handleClick}>
+      <button
+        className="w-1/12 rounded border-2 border-solid border-[#e5989b]"
+        onClick={handleClick}
+      >
         {likeCount}
       </button>
     </div>
