@@ -1,6 +1,14 @@
+import Link from "next/link";
+import Image from "next/image";
+
 import HeaderComponent from "./header";
 import LikeComponent from "./client";
 import LikeCount from "./server";
+import DiscordComponent from "./discord";
+
+import mothHellPic from "../../public/moth_hell.gif";
+import fallconPic from "../../public/fallcon.png";
+import basedPic from "../../public/based.png";
 
 export default function Home() {
   return (
@@ -36,7 +44,9 @@ export default function Home() {
       <div className="box">
         <h3>Projects</h3>
         <h4>Shiptest Github Repository - Contributor</h4>
-        <a href="https://github.com/shiptest-ss13/Shiptest">Shiptest Github</a>
+        <Link href="https://github.com/shiptest-ss13/Shiptest">
+          Shiptest Github
+        </Link>
         <p>
           I have done a couple of cool things, Trickwine, Rations, Porting TG
           Species food, with Gun Smithing and a rework to golem corpses in the
@@ -44,40 +54,43 @@ export default function Home() {
           refactors
         </p>
         <h4>MNPS Archive Website - Project Lead</h4>
-        <a href="https://mnps-archive.vercel.app">Website</a>
+        <Link href="https://mnps-archive.vercel.app">Website</Link>
         <p>Making a cool website! Im getting paid for this one!!!!</p>
         <h4>Shiptest Blorbo Database</h4>
-        <a href="https://solgov.vercel.app">Website</a>
+        <Link href="https://solgov.vercel.app">Website</Link>
         <p>
           Desgined as a in world database made by a spy agency to keep tabs on
           the frointer, Aka the characters people play.
         </p>
         <h4>Trackers</h4>
-        <a href="trackers"> Making my own slimevr trackers! </a>
+        <Link href="trackers"> Making my own slimevr trackers! </Link>
       </div>
 
       <div className="box">
         <h3>Accounts</h3>
-        <a href="https://github.com/FalloutFalcon">Github</a>
-        <a href="https://steamcommunity.com/profiles/76561198289230657/">
+        <Link href="https://github.com/FalloutFalcon">Github</Link>
+        <Link href="https://steamcommunity.com/profiles/76561198289230657/">
           Steam
-        </a>
-        <a href="https://open.spotify.com/user/31ymvtm5x7sdv3375a4bizgr276a">
+        </Link>
+        <Link href="https://open.spotify.com/user/31ymvtm5x7sdv3375a4bizgr276a">
           Spotify
-        </a>
-        <img
-          src="moth_hell.gif"
+        </Link>
+        <Image
+          src={mothHellPic}
           className="fixed opacity-0 w-[150px] left-0 bottom-0 hover:animate-[fadeIn_3s] hover:opacity-100"
+          alt="Wattsons terrible moth"
         />
-        <img
-          src="fallcon.png"
-          alt="Gay"
+        <Image
+          src={fallconPic}
           className="fixed w-[300px] right-0 bottom-0 hover:animate-[fadeIn_3s] hover:opacity-0"
+          alt="Gay?"
         />
-        <img
-          src="based.png"
+        <Image
+          src={basedPic}
           className="fixed opacity-0 w-[300px] right-0 bottom-0 hover:animate-[fadeIn_3s] hover:opacity-100"
+          alt="Poggers"
         />
+        <DiscordComponent />
       </div>
 
       <footer>

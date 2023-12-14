@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function trackerPage() {
   return (
     <div>
@@ -6,13 +8,13 @@ export default function trackerPage() {
       <p>This is my first project working closesly with eletronics!</p>
       <p>Found some useful links about how IMUs work!</p>
       <p>Random Standford class!</p>
-      <a href="https://web.stanford.edu/class/ee267/notes/ee267_notes_imu.pdf">
+      <Link href="https://web.stanford.edu/class/ee267/notes/ee267_notes_imu.pdf">
         https://web.stanford.edu/class/ee267/notes/ee267_notes_imu.pdf
-      </a>
+      </Link>
       <p>Pretty useful guide</p>
-      <a href="http://www.starlino.com/imu_guide.html">
+      <Link href="http://www.starlino.com/imu_guide.html">
         http://www.starlino.com/imu_guide.html
-      </a>
+      </Link>
 
       <p>
         The current plan is using the cheap IMU and add on an external
