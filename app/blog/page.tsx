@@ -77,11 +77,22 @@ export default function Home() {
         <Link href="https://open.spotify.com/user/31ymvtm5x7sdv3375a4bizgr276a">
           Spotify
         </Link>
-        <Image
-          src={mothHellPic}
-          className="fixed bottom-0 left-0 w-[150px] opacity-0 hover:animate-[fadeIn_3s] hover:opacity-100"
-          alt="Wattsons terrible moth"
-        />
+      </div>
+      <Image
+        src={mothHellPic}
+        className="fixed bottom-0 left-0 w-[150px] opacity-0 hover:animate-[fadeIn_3s] hover:opacity-100"
+        alt="Wattsons terrible moth"
+      />
+      <footer>
+        <LikeComponent likes={LikeCount(0)} />
+        <p className="pt-10 text-[pink]">© 2023 fallcon&apos;s</p>
+      </footer>
+    </div>
+  );
+}
+
+/*
+
         <Image
           src={fallconPic}
           className="fixed bottom-0 right-0 w-[300px] hover:animate-[fadeIn_3s] hover:opacity-0"
@@ -92,12 +103,4 @@ export default function Home() {
           className="fixed bottom-0 right-0 w-[300px] opacity-0 hover:animate-[fadeIn_3s] hover:opacity-100"
           alt="Poggers"
         />
-      </div>
-
-      <footer>
-        <LikeComponent likes={LikeCount(0)} />
-        <p className="pt-10 text-[pink]">© 2023 fallcon&apos;s</p>
-      </footer>
-    </div>
-  );
-}
+*/
