@@ -37,12 +37,21 @@ export default function DiscordComponent() {
   return (
     !loading &&
     data && (
-      <div className="bg fixed bottom-[300px] right-0 m-[5px] my-2.5 flex w-[300px] flex-row items-center rounded-[5px] border border-[3px] border-[#e5989b] border-[solid] bg-[#6d6875] p-2.5">
-        <img
-          src={`https://cdn.discordapp.com/avatars/${data.discord_user.id}/${data.discord_user.avatar}.png`}
-          className="h-12 w-12 rounded-full"
-        />
-        <p>{data.discord_status}</p>
+      <div className=" fixed bottom-[300px] right-0 m-[5px] my-2.5 flex w-[300px] flex-col items-center p-2.5 m-2">
+        {data.discord_status ? (
+          <div className="bg w-full rounded-[5px] border border-[3px] border-[#e5989b] border-[solid] bg-[#6d6875] p-2.5 m-2">
+            {data.discord_status}
+          </div>
+        ) : (
+          ""
+        )}
+        {data.spotify ? (
+          <div className="bg w-full rounded-[5px] border border-[3px] border-[#e5989b] border-[solid] bg-[#6d6875] p-2.5 m-2">
+            Listening to {data.spotify.song} by {data.spotify.artist}
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     )
   );
