@@ -17,13 +17,13 @@
 }
 
 body {
-  background:#6d6875;
-  display:flex;
-  justify-content:center;
-  margin:0;
+  background: #6d6875;
+  display: flex;
+  justify-content: center;
+  margin: 0;
   height: auto;
-  font-family:system-ui,sans-serif;
-  color:#ffcdb2;
+  font-family: system-ui, sans-serif;
+  color: #ffcdb2;
 }
 
 h1 {
@@ -44,11 +44,11 @@ h4 {
 }
 a {
   font-style: italic;
-  color:#E5989B;
-  padding : 0 0.25rem;
+  color: #e5989b;
+  padding: 0 0.25rem;
 }
 a:hover {
-  color:#B5838D;
+  color: #b5838d;
 }
 
 .allTheStuff {
@@ -56,32 +56,36 @@ a:hover {
 }
 
 .box {
-  border: #E5989B 3px solid;
-  border-radius:5px;
-  padding:10px;
-  margin:5px;
-  margin-top:10px;
-  margin-bottom:10px;
+  border: #e5989b 3px solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .alstolfo {
-  position:fixed;
-  bottom:0;
-  right:0;
-  width:300px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+  0% {
+    opacity: 0;
   }
-  
+  100% {
+    opacity: 1;
+  }
+}
+
 .moth {
-  position:fixed;
-  bottom:0;
-  left:0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   opacity: 0;
-  width:300px;
+  width: 300px;
 }
 
 .moth:hover {
