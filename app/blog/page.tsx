@@ -95,7 +95,7 @@ export default function Home() {
 
       <footer>
         <LikeComponent likes={LikeCount(0)} />
-        <p className="pt-10">© 2023 fallcon&apos;s</p>
+        <p className="pt-10 text-[pink]">© 2023 fallcon&apos;s</p>
       </footer>
     </div>
   );

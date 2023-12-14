@@ -37,17 +37,29 @@ export default function DiscordComponent() {
   return (
     !loading &&
     data && (
-      <div className=" fixed bottom-[300px] right-0 m-[5px] my-2.5 flex w-[300px] flex-col items-center p-2.5 m-2">
+      <div className="fixed bottom-[300px] right-0 m-[5px] flex w-[300px] flex-col items-center">
         {data.discord_status ? (
-          <div className="bg w-full rounded-[5px] border border-[3px] border-[#e5989b] border-[solid] bg-[#6d6875] p-2.5 m-2">
+          <div
+            className={`bg m-1 w-full rounded-[5px] border border-[3px] border-[#e5989b] border-[solid] bg-[#6d6875] p-2 ${
+              data.discord_status === "online"
+                ? "bg-green-500"
+                : data.discord_status === "dnd"
+                  ? "bg-red-500"
+                  : data.discord_status === "idle"
+                    ? "bg-yellow-500"
+                    : "bg-slate-500"
+            }`}
+          >
             {data.discord_status}
           </div>
         ) : (
           ""
         )}
         {data.spotify ? (
-          <div className="bg w-full rounded-[5px] border border-[3px] border-[#e5989b] border-[solid] bg-[#6d6875] p-2.5 m-2">
-            Listening to {data.spotify.song} by {data.spotify.artist}
+          <div className="bg m-1 w-full rounded-[5px] border border-[3px] border-[#e5989b] border-[solid] bg-[#6d6875] p-2">
+            Listening to{" "}
+            <span className="text-[pink]">{data.spotify.song}</span> by{" "}
+            <span className="text-[pink]">{data.spotify.artist}</span>
           </div>
         ) : (
           ""
