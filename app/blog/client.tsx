@@ -6,7 +6,7 @@ import { LikeCount } from "./server";
 
 export const revalidate = 0;
 
-function LikeComponent({ likes }: { likes: number }) {
+function ClientLikeComponent({ likes }: { likes: number }) {
   const [likeCount, setLikes] = useState(likes);
   function handleClick() {
     const newCount = likeCount + 1;
@@ -24,11 +24,5 @@ function LikeComponent({ likes }: { likes: number }) {
       </button>
     </div>
   );
-}
-export { LikeComponent };
-
-function ClientLikeComponent({ likes }: { likes: number }) {
-  // Use fetched data here
-  return <div>{likes}</div>;
 }
 export { ClientLikeComponent };
