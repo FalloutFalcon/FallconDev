@@ -68,10 +68,10 @@ export default function DiscordComponent() {
     data && (
       <div className="m-[5px] flex flex-col items-center text-center">
         <h3>Discord</h3>
-        <h2>thatdarnkraut</h2>
+        <h4>_fallcon</h4>
         {data.discord_status ? (
           <div
-            className={`bg m-1 w-full rounded border-2 border-solid border-[#e5989b] bg-[#6d6875] p-2 ${
+            className={`bg m-1 w-full rounded border-2 border-solid border-[#e5989b] p-2 ${
               data.discord_status === "online"
                 ? "border-green-500"
                 : data.discord_status === "dnd"
@@ -87,7 +87,7 @@ export default function DiscordComponent() {
           ""
         )}
         {data.spotify ? (
-          <div className="bg m-1 w-full rounded border-2 border-solid border-[#e5989b] bg-[#6d6875] p-2">
+          <div className="bg m-1 w-full rounded border-2 border-solid border-[#e5989b] p-2">
             Listening to{" "}
             <span className="font-medium text-[pink]">{data.spotify.song}</span>{" "}
             by{" "}
@@ -98,13 +98,18 @@ export default function DiscordComponent() {
         ) : (
           ""
         )}
-        {data.activities?.[0]?.name ? (
-          <div className="bg m-1 w-full rounded border-2 border-solid border-[#e5989b] bg-[#6d6875] p-2">
-            {data.activities[0].name !== "Custom Status" && <p className="font-medium text-[pink]">{data.activities[0].name}</p>}
-            <p className="font-medium text-[pink]">{data.activities[0].state}</p>{" "}
-          </div>
-        ) : (
-          ""
+        {data.activities?.map((activity, index) =>
+          activity.name && activity.name !== "Spotify" ? (
+            <div
+              key={index}
+              className="bg m-1 w-full rounded border-2 border-solid border-[#e5989b] p-2"
+            >
+              {activity.name !== "Custom Status" && (
+                <p className="font-medium text-[pink]">{activity.name}</p>
+              )}
+              <p className="font-medium text-[pink]">{activity.state}</p>{" "}
+            </div>
+          ) : null,
         )}
         <Image src={fallconPic} className="w-[200px]" alt="Gay?" />
       </div>

@@ -2,8 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import HeaderComponent from "./header";
-import LikeComponent from "./client";
-import LikeCount from "./server";
+import { ServerLikeComponent } from "./server";
 import DiscordComponent from "./discord";
 
 import mothHellPic from "../../public/moth_hell.gif";
@@ -76,14 +75,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <Image
         src={mothHellPic}
         className="fixed bottom-0 left-0 w-[150px] opacity-0 hover:animate-[fadeIn_3s] hover:opacity-100"
         alt="Wattsons terrible moth"
       />
       <footer>
-        <LikeComponent likes={LikeCount(0)} />
+        <ServerLikeComponent />
         <p className="pt-10 text-[pink]">© 2023 fallcon&apos;s</p>
       </footer>
     </div>
