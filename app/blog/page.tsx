@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 
 import HeaderComponent from "./header";
 import { ServerLikeComponent } from "./server";
@@ -8,8 +9,6 @@ import DiscordComponent from "./discord";
 import mothHellPic from "../../public/moth_hell.gif";
 import fallconPic from "../../public/fallcon.png";
 import basedPic from "../../public/based.png";
-
-import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "fallcon's blog",

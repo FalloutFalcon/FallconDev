@@ -10,12 +10,10 @@ function LikeCount(change: number) {
 }
 export { LikeCount };
 
-
 function ServerLikeComponent() {
   const likeCount = LikeCount(1); // Fetch data here
 
   // Pass fetched data to Client Component
   return <ClientLikeComponent likes={likeCount} />;
 }
-
 export { ServerLikeComponent };
