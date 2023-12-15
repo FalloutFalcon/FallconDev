@@ -97,7 +97,7 @@ export default function DiscordComponent() {
         ) : (
           ""
         )}
-        {data.activities[0].name ? (
+        {data.activities?.[0]?.name ? (
           <div className="bg m-1 w-full rounded border-2 border-solid border-[#e5989b] bg-[#6d6875] p-2">
             {data.activities[0].name !== "Custom Status" && <p className="font-medium text-[pink]">{data.activities[0].name}</p>}
             <p className="font-medium text-[pink]">{data.activities[0].state}</p>{" "}
