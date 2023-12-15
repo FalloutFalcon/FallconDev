@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div className="w-[90vw]">
       <HeaderComponent></HeaderComponent>
-      <div className="flex">
+      <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
           <div className="box">
             <h3>Coding</h3>
@@ -62,19 +62,18 @@ export default function Home() {
             <Link href="trackers"> Making my own slimevr trackers! </Link>
           </div>
           <div className="box">
-        <h3>Accounts</h3>
-        <Link href="https://github.com/FalloutFalcon">Github</Link>
-        <Link href="https://steamcommunity.com/profiles/76561198289230657/">
-          Steam
-        </Link>
-        <Link href="https://open.spotify.com/user/31ymvtm5x7sdv3375a4bizgr276a">
-          Spotify
-        </Link>
-      </div>
+            <h3>Accounts</h3>
+            <Link href="https://github.com/FalloutFalcon">Github</Link>
+            <Link href="https://steamcommunity.com/profiles/76561198289230657/">
+              Steam
+            </Link>
+            <Link href="https://open.spotify.com/user/31ymvtm5x7sdv3375a4bizgr276a">
+              Spotify
+            </Link>
+          </div>
         </div>
         <DiscordComponent />
       </div>
-
 
       <Image
         src={mothHellPic}
