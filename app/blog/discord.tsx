@@ -68,6 +68,7 @@ export default function DiscordComponent() {
     data && (
       <div className="m-[5px] flex w-1/2 flex-col items-center text-center">
         <h3>Discord</h3>
+        <h2>thatdarnkraut</h2>
         {data.discord_status ? (
           <div
             className={`bg m-1 w-full rounded border-2 border-solid border-[#e5989b] bg-[#6d6875] p-2 ${
