@@ -10,6 +10,32 @@ export default function DiscordComponent() {
     discord_status: "online" | "dnd" | "idle";
     username: string;
     discriminator: string;
+    activities: {
+      type: number;
+      name: string;
+      state: string;
+      details: string;
+      timestamps: {
+        start: number;
+        end: number;
+      };
+      assets: {
+        large_image: string;
+        large_text: string;
+        small_image: string;
+        small_text: string;
+      };
+      party: {
+        id: string;
+      };
+      secrets: {
+        join: string;
+        spectate: string;
+        match: string;
+      };
+      instance: boolean;
+      flags: number;
+    }[];
     discord_user: {
       username: string;
       discriminator: string;
@@ -40,7 +66,7 @@ export default function DiscordComponent() {
   return (
     !loading &&
     data && (
-      <div className="m-[5px] flex w-1/4 flex-col items-center text-center">
+      <div className="m-[5px] flex w-1/2 flex-col items-center text-center">
         <h3>Discord</h3>
         {data.discord_status ? (
           <div
@@ -67,6 +93,14 @@ export default function DiscordComponent() {
             <span className="font-medium text-[pink]">
               {data.spotify.artist}
             </span>
+          </div>
+        ) : (
+          ""
+        )}
+        {data.activities[1].name ? (
+          <div className="bg m-1 w-full rounded border-2 border-solid border-[#e5989b] bg-[#6d6875] p-2">
+            {data.activities[1].name !== "Custom Status" && <p className="font-medium text-[pink]">{data.activities[1].name}</p>}
+            <p className="font-medium text-[pink]">{data.activities[1].state}</p>{" "}
           </div>
         ) : (
           ""

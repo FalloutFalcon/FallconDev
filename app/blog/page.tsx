@@ -49,33 +49,32 @@ export default function Home() {
               proxy react to be a lovely tool to work with
             </p>
           </div>
+          <div className="box">
+            <h3>Projects</h3>
+            <h4>Shiptest Github Repository - Contributor</h4>
+            <Link href="https://github.com/shiptest-ss13/Shiptest">
+              Shiptest Github
+            </Link>
+            <p>
+              I have done a couple of cool things, Trickwine, Rations, Porting
+              TG Species food, with Gun Smithing and a rework to golem corpses
+              in the works. I have also done a bunch of the boring stuff like
+              bug fixes and refactors
+            </p>
+            <h4>MNPS Archive Website - Project Lead</h4>
+            <Link href="https://mnps-archive.vercel.app">Website</Link>
+            <p>Making a cool website! Im getting paid for this one!!!!</p>
+            <h4>Shiptest Blorbo Database</h4>
+            <Link href="https://solgov.vercel.app">Website</Link>
+            <p>
+              Desgined as a in world database made by a spy agency to keep tabs
+              on the frointer, Aka the characters people play.
+            </p>
+            <h4>Trackers</h4>
+            <Link href="trackers"> Making my own slimevr trackers! </Link>
+          </div>
         </div>
         <DiscordComponent />
-      </div>
-
-      <div className="box">
-        <h3>Projects</h3>
-        <h4>Shiptest Github Repository - Contributor</h4>
-        <Link href="https://github.com/shiptest-ss13/Shiptest">
-          Shiptest Github
-        </Link>
-        <p>
-          I have done a couple of cool things, Trickwine, Rations, Porting TG
-          Species food, with Gun Smithing and a rework to golem corpses in the
-          works. I have also done a bunch of the boring stuff like bug fixes and
-          refactors
-        </p>
-        <h4>MNPS Archive Website - Project Lead</h4>
-        <Link href="https://mnps-archive.vercel.app">Website</Link>
-        <p>Making a cool website! Im getting paid for this one!!!!</p>
-        <h4>Shiptest Blorbo Database</h4>
-        <Link href="https://solgov.vercel.app">Website</Link>
-        <p>
-          Desgined as a in world database made by a spy agency to keep tabs on
-          the frointer, Aka the characters people play.
-        </p>
-        <h4>Trackers</h4>
-        <Link href="trackers"> Making my own slimevr trackers! </Link>
       </div>
 
       <div className="box">
