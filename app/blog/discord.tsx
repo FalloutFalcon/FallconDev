@@ -66,7 +66,7 @@ export default function DiscordComponent() {
   return (
     !loading &&
     data && (
-      <div className="m-[5px] flex w-1/2 flex-col items-center text-center">
+      <div className="m-[5px] flex w-1/3 flex-col items-center text-center">
         <h3>Discord</h3>
         <h2>thatdarnkraut</h2>
         {data.discord_status ? (

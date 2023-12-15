@@ -25,18 +25,6 @@ export default function Home() {
       <div className="flex">
         <div className="flex flex-col">
           <div className="box">
-            <h3>About Me</h3>
-            <p>
-              I got my start coding in middle school where I faintly remember
-              scratch projects with my friend from boyscouts. I always wanted to
-              get good at coding because I always wanted to make my own games. I
-              made.. alot of progress since then and im really proud of alot of
-              the work I have done so far. I spend most of my time either gaming
-              or programming but I also really love D&D and gardening whenever I
-              can.
-            </p>
-          </div>
-          <div className="box">
             <h3>Coding</h3>
             <p>
               I do cool stuff for shiptest which I think is my favorite code to
@@ -73,11 +61,7 @@ export default function Home() {
             <h4>Trackers</h4>
             <Link href="trackers"> Making my own slimevr trackers! </Link>
           </div>
-        </div>
-        <DiscordComponent />
-      </div>
-
-      <div className="box">
+          <div className="box">
         <h3>Accounts</h3>
         <Link href="https://github.com/FalloutFalcon">Github</Link>
         <Link href="https://steamcommunity.com/profiles/76561198289230657/">
@@ -87,6 +71,11 @@ export default function Home() {
           Spotify
         </Link>
       </div>
+        </div>
+        <DiscordComponent />
+      </div>
+
+
       <Image
         src={mothHellPic}
         className="fixed bottom-0 left-0 w-[150px] opacity-0 hover:animate-[fadeIn_3s] hover:opacity-100"
