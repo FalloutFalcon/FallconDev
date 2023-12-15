@@ -61,7 +61,10 @@ export default function Home() {
             <h4>Trackers</h4>
             <Link href="trackers"> Making my own slimevr trackers! </Link>
           </div>
-          <div className="box">
+        </div>
+        <div className="flex flex-col">
+          <DiscordComponent />
+          <div className="box flex flex-col">
             <h3>Accounts</h3>
             <Link href="https://github.com/FalloutFalcon">Github</Link>
             <Link href="https://steamcommunity.com/profiles/76561198289230657/">
@@ -72,7 +75,6 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <DiscordComponent />
       </div>
 
       <Image
