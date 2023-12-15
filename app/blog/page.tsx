@@ -16,9 +16,6 @@ export const metadata: Metadata = {
     "My personal website! Mostly just a blog but doubles as a portfolio",
 };
 
-//REMOVE THIS AFTER TESTING
-export const revalidate = 0;
-
 export default function Home() {
   return (
     <div className="w-[90vw]">
