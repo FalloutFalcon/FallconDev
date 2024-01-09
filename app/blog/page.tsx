@@ -47,9 +47,6 @@ export default function Home() {
               in the works. I have also done a bunch of the boring stuff like
               bug fixes and refactors
             </p>
-            <h4>MNPS Archive Website - Project Lead</h4>
-            <Link href="https://mnps-archive.vercel.app">Website</Link>
-            <p>Making a cool website! Im getting paid for this one!!!!</p>
             <h4>Shiptest Blorbo Database</h4>
             <Link href="https://solgov.vercel.app">Website</Link>
             <p>
