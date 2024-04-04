@@ -64,6 +64,11 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.boxborder {
+  border: #e5989b 3px solid;
+  border-radius: 10px;
+}
+
 .alstolfo {
   position: fixed;
   bottom: 0;

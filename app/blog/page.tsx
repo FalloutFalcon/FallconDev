@@ -9,6 +9,7 @@ import DiscordComponent from "./discord";
 import mothHellPic from "../../public/moth_hell.gif";
 import fallconPic from "../../public/fallcon.png";
 import basedPic from "../../public/based.png";
+import barrel from "../../public/barrelnew.png";
 
 export const metadata: Metadata = {
   title: "fallcon's blog",
@@ -47,6 +48,13 @@ export default function Home() {
               in the works. I have also done a bunch of the boring stuff like
               bug fixes and refactors
             </p>
+            <div className="flex flex-col h-[300px]">
+              <Image
+                src={barrel}
+                className="boxborder h-full w-[500px] drop-shadow-xl"
+                alt="Barrel Class Ship"
+              />
+            </div>
             <h4>Shiptest Blorbo Database</h4>
             <Link href="https://solgov.vercel.app">Website</Link>
             <p>
