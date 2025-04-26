@@ -20,35 +20,22 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="w-[90vw]">
-      <HeaderComponent></HeaderComponent>
+      <HeaderComponent />
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
           <div className="box">
-            <h3>Coding</h3>
-            <p>
-              I do cool stuff for shiptest which I think is my favorite code to
-              write since I really like the feedback loop of coding games
-            </p>
-            <p>
-              I only recently started learning web development, but I already
-              have been drinking the full stack soup. I have extreamly mixed
-              feelings about tailwind css but have been finding next.js and by
-              proxy react to be a lovely tool to work with
-            </p>
-          </div>
-          <div className="box">
             <h3>Projects</h3>
-            <h4>Shiptest Github Repository - Contributor</h4>
+            <h4>Shiptest Github Repository - Maintainer</h4>
             <Link href="https://github.com/shiptest-ss13/Shiptest">
               Shiptest Github
             </Link>
             <p>
-              I have done a couple of cool things, Trickwine, Rations, Porting
-              TG Species food, with Gun Smithing and a rework to golem corpses
-              in the works. I have also done a bunch of the boring stuff like
-              bug fixes and refactors
+              I have done a ton of cool projects for shiptest. 
+              Trickwines are my baby but I've done some other stuff like completely reworking the mission and bounty systems.
+              I have also done a bunch of the boring stuff like
+              bug fixes and refactors. I've ported so many TGstation prs I have lost count.
             </p>
-            <div className="flex flex-col h-[300px]">
+            <div className="flex h-[300px] flex-col">
               <Image
                 src={barrel}
                 className="boxborder h-full w-[500px] drop-shadow-xl"
@@ -61,8 +48,9 @@ export default function Home() {
               Desgined as a in world database made by a spy agency to keep tabs
               on the frointer, Aka the characters people play.
             </p>
+            {/* 
             <h4>Trackers</h4>
-            <Link href="trackers"> Making my own slimevr trackers! </Link>
+            <Link href="trackers"> Making my own slimevr trackers! </Link>*/}
           </div>
         </div>
         <div className="flex flex-col">
@@ -77,6 +65,15 @@ export default function Home() {
               Spotify
             </Link>
           </div>
+          <a href="http://www.allaboutfrogs.org/funstuff/frogtest.php3">
+            <img
+              src="http://www.allaboutfrogs.org/funstuff/frogtest/result13.jpg"
+              className="boxborder h-full"
+              width="200"
+              height="100"
+              alt="I'm a Pixie Frog!"
+            />
+          </a>
         </div>
       </div>
       <Image
@@ -86,14 +83,13 @@ export default function Home() {
       />
       <footer>
         <ServerLikeComponent />
-        <p className="pt-10 text-[pink]">© 2023 fallcon&apos;s</p>
+        <p className="pt-10 text-[pink]">© 2025 fallcon&apos;s</p>
       </footer>
     </div>
   );
 }
 
 /*
-
         <Image
           src={fallconPic}
           className="fixed bottom-0 right-0 w-[300px] hover:animate-[fadeIn_3s] hover:opacity-0"

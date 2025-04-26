@@ -2,7 +2,7 @@
 
 import { ClientLikeComponent } from "./client";
 
-let likes = 5;
+let likes = 0;
 
 function LikeCount(change: number) {
   console.log("LikeCount called", { likes }, { change });
