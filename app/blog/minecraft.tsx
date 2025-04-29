@@ -80,14 +80,14 @@ export default function MinecraftComponent() {
     !loading &&
     data && (
       <div className="m-[5px] flex flex-col items-center text-center">
-        <h3>Modded Server Status</h3>
+        <h4>Server Status</h4>
         <div
           className={`bg m-1 w-full rounded border-2 border-solid p-2 ${
             data.online ? "border-green-500" : "border-red-500"
           }`}
         >
           <p className="font-semibold">
-            Server Status: {data.online ? "Online" : "Offline"}
+            {data.online ? "Online" : "Offline"}
           </p>
           {data.online && data.players && (
             <p>
