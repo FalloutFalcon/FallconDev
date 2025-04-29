@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import HeaderComponent from "./header";
 import { ServerLikeComponent } from "./server";
 import DiscordComponent from "./discord";
+import MinecraftComponent from "./minecraft";
 
 import mothHellPic from "../../public/moth_hell.gif";
 import fallconPic from "../../public/fallcon.png";
@@ -74,6 +75,7 @@ export default function Home() {
               alt="I'm a Pixie Frog!"
             />
           </a>
+          <MinecraftComponent />
         </div>
       </div>
       <Image
