@@ -31,10 +31,11 @@ export default function Home() {
               Shiptest Github
             </Link>
             <p>
-              I have done a ton of cool projects for shiptest. 
-              Trickwines are my baby but I've done some other stuff like completely reworking the mission and bounty systems.
-              I have also done a bunch of the boring stuff like
-              bug fixes and refactors. I've ported so many TGstation prs I have lost count.
+              I have done a ton of cool projects for shiptest. Trickwines are my
+              baby but I've done some other stuff like completely reworking the
+              mission and bounty systems. I have also done a bunch of the boring
+              stuff like bug fixes and refactors. I've ported so many TGstation
+              prs I have lost count.
             </p>
             <div className="flex h-[300px] flex-col">
               <Image
@@ -67,12 +68,13 @@ export default function Home() {
             </Link>
           </div>
           <a href="http://www.allaboutfrogs.org/funstuff/frogtest.php3">
-            <img
+            <Image
               src="http://www.allaboutfrogs.org/funstuff/frogtest/result13.jpg"
               className="boxborder h-full"
-              width="200"
-              height="100"
+              width={200}
+              height={100}
               alt="I'm a Pixie Frog!"
+              unoptimized
             />
           </a>
           <MinecraftComponent />
