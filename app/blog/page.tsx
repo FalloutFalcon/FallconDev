@@ -26,7 +26,16 @@ export default function Home() {
         <div className="flex flex-col">
           <div className="box">
             <h3>Projects</h3>
-            <h4>Shiptest Github Repository - Maintainer</h4>
+            <h4>ApocryphaXIII Github Repository - Head Coder</h4>
+            <Link href="https://github.com/ApocryphaXIII/Apocrypha13">
+              ApocryphaXIII Github
+            </Link>
+            <h4>Darkpack Github Repository - Maintainer</h4>
+            <Link href="https://github.com/DarkPack13/SecondCity">
+              Darkpack Github
+            </Link>
+            <p>Cordinated a group rebase project among of group of forks and downstreams of the Wod13 codebase. </p>
+            <h4>Shiptest Github Repository - Head Coder</h4>
             <Link href="https://github.com/shiptest-ss13/Shiptest">
               Shiptest Github
             </Link>
