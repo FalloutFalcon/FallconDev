@@ -69,7 +69,7 @@ export default function MinecraftComponent() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/api/minecraft-status?address=fallcon.dev")
+    fetch("/api/minecraft-status?address=37.27.129.146")
       .then((res) => res.json())
       .then((res) => {
         setData(res);
