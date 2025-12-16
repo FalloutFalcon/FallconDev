@@ -34,7 +34,7 @@ export default function Home() {
             <Link href="https://github.com/DarkPack13/SecondCity">
               Darkpack Github
             </Link>
-            <p>Cordinated a group rebase project among of group of forks and downstreams of the Wod13 codebase. </p>
+            <p>Cordinated a group rebase project among of group of forks and downstreams of the Wod13 codebase. Should be running servers on the rebase soon!!!</p>
             <h4>Shiptest Github Repository - Head Coder</h4>
             <Link href="https://github.com/shiptest-ss13/Shiptest">
               Shiptest Github
